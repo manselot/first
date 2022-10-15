@@ -9,12 +9,17 @@ function App() {
       <nav className={"up_frame"}>
         <h2 className={"up_text"}>"UI/UX - 4 курс Щитов"</h2>
       </nav>
-      <div className={"button_container"}>
-          <button>Кнопка 1</button>
-          <button>Кнопка 2</button>
-        </div>
       <main className={"main"}>
-        <button>Кнопка 3</button>
+        <div className={"button_container"}>
+          <button className={"button"}>Задание 1</button>
+          <button className={"button"}>Задание 2</button>
+          <button className={"button"}>Задание 3</button>
+          <button className={"button"}>Задание 4</button>
+        </div>
+        <div className={"counter_frame"}>
+          <p>Текст1</p>
+          <p>Текст2</p>
+        </div>
       </main>
     </div>
   )

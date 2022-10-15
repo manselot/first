@@ -1,26 +1,23 @@
+/* Применяется ко всем элементам */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Применяется ко всем элементам внутри тега html */
 html {
   height: 100vh;
 }
 
+/* Применяется к корню проекта */
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  
   max-width: 1920px;
   margin: 0 auto;
   text-align: center;
 
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #DED3D3;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +26,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/* Стиль верхнего фрейма */
 .up_frame {
   display: flex;
   flex-direction: row;
@@ -36,6 +34,7 @@ html {
   align-content: center;
   align-items: center;
   justify-content: flex-start;
+
   padding-left: 5%;
   height: 150px;
   top: 0px;
@@ -44,6 +43,7 @@ html {
   background: #F93A3A;
 }
 
+/* Стиль для текста, находящегося внутри верхнего фрейма */
 .up_text {
   font-family: 'Inter';
   font-style: normal;
@@ -51,14 +51,64 @@ html {
   font-size: 50px;
 }
 
+/* Контейнер для кнопок */
 .button_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+
   height: 100%;
-  /* padding-left: 3%;
-  padding-right: 3%; */
-  margin: 3%;
+  margin: 2%;
+}
+
+/* Стиль кнопки в основном состоянии */
+.button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  padding: 10px;
+
+  background: #FFFFFF;
+  border: 3px solid #B5B5B5;
+  border-radius: 20px;
+}
+
+/* Реакция кнопки при наведении */
+.button:hover {
+  background: #fa5b5b;
+  color: white;
+  border-color: #000000;
+}
+
+/* */
+.counter_frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+  height: 150px;
+  background: #464646;
+  border-radius: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* */
+.counter_container {
+  background: #464646;
+}
+
+/* */
+.counter_button {
+  width: 95px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
 }
