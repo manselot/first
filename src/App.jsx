@@ -2,7 +2,15 @@ import { useState } from 'react'
 import "./index.css"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const handleIncrement = () => {
+    setCount((count) => count + 1);
+  }
+  
+  const handleDecrement = () => {
+    setCount((count) => count - 1);
+  }
 
   return (
     <div className="root">
@@ -17,8 +25,12 @@ function App() {
           <button className={"button"}>Задание 4</button>
         </div>
         <div className={"counter_frame"}>
-          <p>Текст1</p>
-          <p>Текст2</p>
+          <p className={"counter_text"}>Счётчик</p>
+          <div className={"button_container"}>
+            <button className={"counter_button"} onClick={handleDecrement}>-</button>
+            <p className={"counter_text"}>{count}</p>
+            <button className={"counter_button"} onClick={handleIncrement}>+</button>
+          </div>
         </div>
       </main>
     </div>
