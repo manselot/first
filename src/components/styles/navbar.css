@@ -1,0 +1,24 @@
+/* Стиль верхнего фрейма */
+.up_frame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  
+    padding-left: 5%;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #F93A3A;
+  }
+  
+  /* Стиль для текста, находящегося внутри верхнего фрейма */
+  .up_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+  }
