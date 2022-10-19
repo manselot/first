@@ -1,3 +1,5 @@
+import React from "react";
+
 const Tutorial = () => {
     return (
         <div>
@@ -5,3 +7,5 @@ const Tutorial = () => {
         </div>
     )
 }
+
+export default Tutorial;

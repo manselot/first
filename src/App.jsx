@@ -1,18 +1,18 @@
-import "./index.css"
-import Navbar from "./components/Navbar";
-import Tasklist from "./components/Tasklist";
-import Counter from "./components/Counter";
+import { Route, Routes } from "react-router-dom"
+import Layout from "./Layout"
+import Counter from "./components/Counter"
+import Tutorial from "./pages/Tutorial"
+import Index from "./pages/Index"
 
-function App() {
+export default function App() {
   return (
-    <div className="root">
-      <main className={"main"}>
-        <Navbar/>
-        <Tasklist/>
-        <Counter/>
-      </main>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path={"/"} element={<Index/>}/>
+        <Route path={"/index"} element={<Index/>}/>
+        <Route path={"/counter"} element={<Counter/>}/>
+        <Route path={"/tutorial"} element={<Tutorial/>}/>
+      </Routes>
+    </Layout>
   )
 }
-
-export default App
