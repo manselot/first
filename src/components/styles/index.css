@@ -28,5 +28,8 @@ html {
 
 /* Стиль текста */
 .text {
-  color: black
+  font-family: 'Inter';
+  font-style: normal;
+  text-align: center;
+  color: black;
 }

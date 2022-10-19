@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Layout from "./Layout"
-import Counter from "./components/Counter"
+import Counter from "./pages/Counter"
 import Tutorial from "./pages/Tutorial"
 import Index from "./pages/Index"
 

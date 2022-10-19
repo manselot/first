@@ -11,7 +11,7 @@ const Buttonlist = () => {
             <button className={"button"}>Счётчик</button>
           </Link>
           <Link to={"/tutorial"}>
-            <button className={"button"}>Туториал</button>
+            <button className={"button"}>API туториал</button>
           </Link>
           <button className={"button"}>Задание 4</button>
         </div>
