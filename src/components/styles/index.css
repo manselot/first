@@ -1,0 +1,35 @@
+/* Применяется ко всем элементам */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Применяется ко всем элементам внутри тега html */
+html {
+  height: 100vh;
+}
+
+/* Применяется к корню проекта */
+:root {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #DED3D3;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Стиль текста */
+.text {
+  font-family: 'Inter';
+  font-style: normal;
+  text-align: center;
+  color: black;
+}
